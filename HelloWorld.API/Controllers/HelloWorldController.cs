@@ -8,16 +8,16 @@ namespace HelloWorld.API.Controllers
     /// <summary>
     /// Independent API which returns given message
     /// </summary>
-    [Route("HelloWorld")]
     public class HelloWorldController : ApiController
     {
-        IDataRepository Repository { get; set; }
+        private IDataRepository Repository { get; set; }
+        public HelloWorldController() { }
+        public HelloWorldController(IDataRepository _repository) => Repository = _repository;
 
-        public HelloWorldController(IDataRepository _repository)
-        {
-            Repository = _repository;
-        }
-
+        /// <summary>
+        /// Returns the message
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IHttpActionResult Print()
         {

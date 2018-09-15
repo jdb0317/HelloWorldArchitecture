@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld.API.Business", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld.API.Access", "HelloWorld.API.Access\HelloWorld.API.Access.csproj", "{C9A49CC4-83C8-4048-8848-5610634633F7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld.API.Test", "HelloWorld.API.Test\HelloWorld.API.Test.csproj", "{B82422E8-2714-4307-AC85-AB5E16247EAC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C9A49CC4-83C8-4048-8848-5610634633F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9A49CC4-83C8-4048-8848-5610634633F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9A49CC4-83C8-4048-8848-5610634633F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B82422E8-2714-4307-AC85-AB5E16247EAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B82422E8-2714-4307-AC85-AB5E16247EAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B82422E8-2714-4307-AC85-AB5E16247EAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B82422E8-2714-4307-AC85-AB5E16247EAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
