@@ -11,14 +11,14 @@ namespace HelloWorld.API.Test
     public class HelloWorldUnitTests
     {
         [TestMethod]
-        public void WorkHanderReturnsMessage()
+        public void WorkHandlerReturnsMessage()
         {
             ReturnMessage expectedValue = new ReturnMessage() { MessageValue = Constants.HelloMessage };
             Mock<IDataRepository> mockRepo = new Mock<IDataRepository>();
             mockRepo.Setup(m => m.GetMessage()).Returns(expectedValue);
 
             WorkHandler handler = new WorkHandler(mockRepo.Object);
-            var returnValue = handler.GetMessage();
+            IReturnMessage returnValue = handler.GetMessage();
 
             Assert.IsNotNull(returnValue);
             Assert.AreEqual(returnValue, expectedValue);

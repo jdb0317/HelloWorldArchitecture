@@ -11,7 +11,6 @@ namespace HelloWorld.API.Controllers
     public class HelloWorldController : ApiController
     {
         private IDataRepository Repository { get; set; }
-        public HelloWorldController() { }
         public HelloWorldController(IDataRepository _repository) => Repository = _repository;
 
         /// <summary>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Web.Http.Dependencies;
 using Unity;
 using Unity.Exceptions;
@@ -35,7 +36,7 @@ namespace WebApiDepInject.Models
             }
             catch (ResolutionFailedException)
             {
-                return new List<object>();
+                return Enumerable.Empty<object>();
             }
         }
 

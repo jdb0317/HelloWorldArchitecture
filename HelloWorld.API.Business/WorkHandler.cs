@@ -8,8 +8,8 @@ namespace HelloWorld.API.Business
     /// </summary>
     public class WorkHandler
     {
-        IDataRepository Repository { get; set; }
-        public WorkHandler(IDataRepository _repository) => Repository = _repository;
+        public IDataRepository Repository { get; set; }
+        public WorkHandler(IDataRepository repository) => Repository = repository;
 
         /// <summary>
         /// Simple method that calls on the Access layer to retrieve information
