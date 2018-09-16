@@ -26,7 +26,7 @@ namespace ConsoleApp
                     break;
                 case "file":
                     var fileName = ConfigurationManager.AppSettings[Constants.TextFileNameKey].ToString();
-                    File.AppendAllText(fileName, $"{Environment.NewLine} + {response.MessageValue}");
+                    File.AppendAllText(fileName, $"{response.MessageValue}{Environment.NewLine}");
                     break;
                 case "database":
                     new DbWriter().Push(response.MessageValue);
